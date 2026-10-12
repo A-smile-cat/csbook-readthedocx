@@ -6,6 +6,18 @@ build:
   os: ubuntu-24.04
   tools:
     python: "3.12"
+  apt_packages:
+    - texlive-latex-recommended
+    - texlive-fonts-recommended
+    - texlive-latex-extra
+    - texlive-lang-chinese
+    - latexmk
+
+# 同时构建 HTML 打包、PDF、EPUB（对应页面右下角 Downloads 浮层）
+formats:
+  - htmlzip
+  - pdf
+  - epub
 
 sphinx:
   configuration: source/conf.py

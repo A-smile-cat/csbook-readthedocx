@@ -34,5 +34,13 @@ html_theme_options = {
     'sticky_navigation': True,
 }
 
+# PDF 构建用 xelatex（中文必需）
+latex_engine = 'xelatex'
+latex_elements = {
+    'preamble': r'''
+\usepackage{ctex}
+''',
+}
+
 def setup(app):
     pass
