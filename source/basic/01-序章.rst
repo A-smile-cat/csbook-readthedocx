@@ -1,0 +1,45 @@
+Web 技术演化
+============
+
+简单网站
+--------
+
+最早的网站是静态页面，服务器上直接存放 HTML 文件，浏览器请求后原样返回。
+
+::
+
+    浏览器 ──HTTP──> Web 服务器（HTML/CSS/JS 静态文件）
+
+数据交互
+--------
+
+随着业务复杂，网站需要与数据库交互，动态语言（PHP / JSP / ASP）登场：
+
+.. code-block:: php
+
+    <?php
+    $id = $_GET['id'];
+    $sql = "SELECT * FROM users WHERE id = $id";  // 存在 SQL 注入风险
+    ?>
+
+架构演进
+--------
+
+- 前后端分离：前端 SPA + 后端 API
+- 微服务化：单体拆分为多个服务
+- 缓存层：Redis / Memcached
+
+云服务
+------
+
+IaaS、PaaS、SaaS 逐层抽象，部署从物理机走向容器与 Serverless。
+
+软件开发
+--------
+
+CI/CD、容器化（Docker）、编排（Kubernetes）成为标配。
+
+参考链接
+--------
+
+- `Web 安全学习笔记 <https://websec.readthedocs.io/>`_
