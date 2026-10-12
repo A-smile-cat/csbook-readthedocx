@@ -2,7 +2,7 @@
 import os
 import sys
 
-project = 'Web 安全学习笔记'
+project = '计算机知识库云平台'
 copyright = '2026, ebook'
 author = 'ebook'
 release = 'latest'
